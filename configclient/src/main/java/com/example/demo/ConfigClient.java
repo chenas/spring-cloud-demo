@@ -14,12 +14,12 @@ public class ConfigClient {
 		SpringApplication.run(ConfigClient.class, args);
 	}
 	
-	@Value("${path}")
+	@Value("${filepath}")
 	private String path;
 	
     @RequestMapping
     public String hello() {
-    	return "this is hello world";
+    	return "this is hello world, path: "+ path;
     }
 
 }

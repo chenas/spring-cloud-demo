@@ -1,6 +1,6 @@
 spring:
   application:
-    name: config-client
+    name: test1
   cloud:
     config:
       label: develop
