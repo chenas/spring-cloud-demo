@@ -19,7 +19,7 @@ public class DemoApplication {
    @Value("${server.port}")
    String port;
    
-   @Value("${filepath}")
+   @Value("${demo.hello}")
    private String path;
    
    
