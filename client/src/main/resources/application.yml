@@ -7,3 +7,13 @@ server:
 spring:
     application:
         name: service-helloworld
+    cloud:
+      config:
+        label: develop
+        profile: dev
+        uri: http://localhost:8888/
+        
+logging:
+  level: 
+    com.example: DEBUG
+  file: d:\\output\\logs\\configclient.log

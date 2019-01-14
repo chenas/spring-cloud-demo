@@ -19,9 +19,12 @@ public class DemoApplication {
    @Value("${server.port}")
    String port;
    
+   @Value("${path}")
+   private String path;
+   
     @RequestMapping("/")
     public String home() {
-        return "hello world from port " + port;
+        return "hello world from port " + port + " path:" + path;
     }
 	
 }
