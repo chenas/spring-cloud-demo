@@ -1,0 +1,19 @@
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:9090/eureka/
+server:
+    port: 9091
+spring:
+    application:
+        name: service-helloworld
+    cloud:
+      config:
+        label: develop
+        profile: dev
+        uri: http://localhost:8888/
+        
+logging:
+  level: 
+    com.example: DEBUG
+  file: d:\\output\\logs\\configclient.log

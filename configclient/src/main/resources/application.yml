@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: develop
+      profile: dev
+      uri: http://localhost:8888/
+server:
+  port: 9999
+  
+management: 
+  security: 
+    enabled: false
+  
+logging:
+  level: 
+    com.unifex: DEBUG
+  file: d:\\output\\logs\\configclient.log
