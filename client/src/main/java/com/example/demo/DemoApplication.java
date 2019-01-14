@@ -19,8 +19,9 @@ public class DemoApplication {
    @Value("${server.port}")
    String port;
    
-   @Value("${path}")
+   @Value("${filepath}")
    private String path;
+   
    
     @RequestMapping("/")
     public String home() {
