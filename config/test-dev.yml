@@ -1,2 +1,6 @@
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:9090/eureka/
 demo:
     hello: this is a hello-word demo
